@@ -8634,7 +8634,7 @@ button.bg-dark:hover {
 
 .mt-0,
 .my-0 {
-    margin-top: 0 !important
+    margin-top: 3rem !important
 }
 
 .mr-0,
@@ -8754,7 +8754,7 @@ button.bg-dark:hover {
 
 .mt-5,
 .my-5 {
-    margin-top: 10rem !important
+    margin-top: 5rem !important
 }
 
 .mt-6,
@@ -11011,7 +11011,7 @@ a.text-dark:hover {
 }
 
 .text-muted {
-    color: #6c757d !important
+    color: #081929 !important
 }
 
 .text-black-50 {
@@ -11157,6 +11157,8 @@ a.text-dark:hover {
     background-size: 100%;
     margin-left: -7rem;
 }
+
+
 
 
 /*# sourceMappingURL=bootstrap.min.css.map */
