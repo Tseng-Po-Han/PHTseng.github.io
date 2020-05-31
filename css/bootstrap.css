@@ -11150,5 +11150,13 @@ a.text-dark:hover {
     }
 }
 
+.MainPhoto {
+    background-image: url(img/Main.jpg);
+    background-position-x: 0px;
+    background-position-y: -30px;
+    background-size: 100%;
+    margin-left: -7rem;
+}
+
 
 /*# sourceMappingURL=bootstrap.min.css.map */
