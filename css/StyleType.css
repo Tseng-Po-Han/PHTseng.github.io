@@ -4,6 +4,12 @@ html {
     height: 100%
 }
 
+.ActivitiesPhoto {
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center;
+}
+
 .carousel {
     height: 50%
 }
