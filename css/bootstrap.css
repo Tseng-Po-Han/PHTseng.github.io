@@ -8757,6 +8757,11 @@ button.bg-dark:hover {
     margin-top: 3rem !important
 }
 
+.mt-6,
+.my-6 {
+    margin-top: 20rem !important
+}
+
 
 
 .mr-5,
