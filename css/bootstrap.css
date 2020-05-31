@@ -8730,7 +8730,7 @@ button.bg-dark:hover {
 
 .mt-4,
 .my-4 {
-    margin-top: 1.5rem !important
+    margin-top: 10rem !important
 }
 
 .mr-4,
@@ -8740,7 +8740,7 @@ button.bg-dark:hover {
 
 .mb-4,
 .my-4 {
-    margin-bottom: 1.5rem !important
+    margin-bottom: 2rem !important
 }
 
 .ml-4,
@@ -8754,7 +8754,7 @@ button.bg-dark:hover {
 
 .mt-5,
 .my-5 {
-    margin-top: 3rem !important
+    margin-top: 10rem !important
 }
 
 .mt-6,
@@ -11149,5 +11149,6 @@ a.text-dark:hover {
         border-color: #dee2e6
     }
 }
+
 
 /*# sourceMappingURL=bootstrap.min.css.map */
