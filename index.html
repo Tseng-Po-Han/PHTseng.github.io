@@ -54,6 +54,40 @@
         }
     </style>
     <style type="text/css">
+        html,
+        body,
+        header,
+        .carouselProject {
+            height: 60vh;
+        }
+
+        @media (max-width: 740px) {
+
+            html,
+            body,
+            header,
+            .carouselProject {
+                height: 100vh;
+            }
+        }
+
+        @media (min-width: 800px) and (max-width: 850px) {
+
+            html,
+            body,
+            header,
+            .carouselProject {
+                height: 100vh;
+            }
+        }
+
+        @media (min-width: 800px) and (max-width: 850px) {
+            .navbar:not(.top-nav-collapse) {
+                background: #929FBA !important;
+            }
+        }
+    </style>
+    <style type="text/css">
         /* Chart.js */
         @-webkit-keyframes chartjs-render-animation {
             from {
@@ -326,8 +360,8 @@
                             I have widely involved in the following elective subjects:
                         </p>
                         <div class="row">
-                            <div class="col-6"></div>
-                            <div class="col-6">
+                            <div class="col-2"></div>
+                            <div class="col-8">
                                 <li>Ideal Fluid Flow</li>
                                 <li>Viscous Flow</li>
                                 <li>Advanced Thermodynamics</li>
@@ -357,15 +391,17 @@
                 <hr class="mb-5">
 
                 <!--First row  纜爬機-->
-                <div class="row features-small mb-5 mt-3 wow fadeIn"
-                    style="visibility: visible; animation-name: fadeIn;">
+                <div class="row">
                     <div>
                         <h4 style="text-align: center;">Mechine Design Theory, Cable Climbing Machine(2018.11~2019.1)
                         </h4>
                         <hr class="mb-5">
                     </div>
 
-                    <div class="col-6" style="text-align:justify">
+                </div>
+                <div class="row features-small mb-5 mt-3 wow fadeIn"
+                    style="visibility: visible; animation-name: fadeIn;">
+                    <div class="col-4" style="text-align:justify">
 
                         <p style="margin-bottom: 0rem;">In this project, we are demanded to design a machine to climb
                             through a cable without touching the floor under restrictions of size and cost. The best
@@ -374,7 +410,7 @@
                     </div>
                     <div></div>
 
-                    <div class="col-4">
+                    <div class="col-6">
                         <!--Carousel Wrapper-->
                         <!-- data-ride就是讓幻燈片動起來的bootstrap套件，加上slide就是用滑動效果 -->
                         <div id="carousel-example-1z3" class="carousel slide carousel-fade" data-ride="carousel">
