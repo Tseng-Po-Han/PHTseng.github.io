@@ -29,12 +29,10 @@
 
 ```HTML
 <div class="col-8 Front">
-                            <video autoplay muted loop width="100%" height="90%" no-controls poster="image"
-                                preload="true">
-                                <source src="./video/BboySimoPowerMoveSlowMotionCutted.mp4" type="video/mp4" />
-                            </video>
-
-                        </div>
+        <video autoplay muted loop width="100%" height="90%" no-controls poster="image"preload="true">
+                <source src="./video/BboySimoPowerMoveSlowMotionCutted.mp4" type="video/mp4" />
+        </video>
+</div>
 ```
 
 * **主頁塗鴉區**
