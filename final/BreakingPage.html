@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<!-- saved from url=(0060)https://www.w3schools.com/howto/tryhow_css_parallax_demo.htm -->
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History of Hip Hop</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <style>
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+            font: 400 15px/1.8 "Lato", sans-serif;
+            color: #777;
+        }
+
+        .bgimg-1,
+        .bgimg-2,
+        .bgimg-3,
+        .bgimg-4 {
+            position: relative;
+            opacity: 0.65;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+
+        .bgimg-1 {
+            background-image: url("./CollegeHighvol.14_flare.jpg");
+            min-height: 100%;
+        }
+
+        .bgimg-2 {
+            background-image: url("./DMF_Final.jpg");
+            /* min-height: 400px; */
+            min-height: 100%;
+        }
+
+        .bgimg-3 {
+            background-image: url("./FrontTheTDC.jpg");
+            /* min-height: 400px; */
+            min-height: 100%;
+        }
+
+        .bgimg-4 {
+            background-image: url("./IMG_1434.JPG");
+            background-position: right;
+            background-size: contain;
+            min-height: 100%;
+        }
+
+        .caption {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            width: 100%;
+            text-align: center;
+            color: #000;
+        }
+
+        .caption span.border {
+            background-color: #111;
+            color: #fff;
+            padding: 18px;
+            font-size: 25px;
+            letter-spacing: 10px;
+        }
+
+        h3 {
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            font: 20px "Lato", sans-serif;
+            color: #111;
+        }
+
+        /* Turn off parallax scrolling for tablets and phones */
+        @media only screen and (max-device-width: 1024px) {
+
+            .bgimg-1,
+            .bgimg-2,
+            .bgimg-3 {
+                background-attachment: scroll;
+            }
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <header id="Menu">
+        <!-- navbar -->
+        <nav class="navbar navbar-dark fixed-top navbar-expand-lg scrolling-navbar" style="background-color: black;">
+            <!--navbar-dark-->
+            <div class="container-fluid">
+
+                <!-- Brand -->
+                <a class="navbar-brand" href="./index.html">
+                    <strong>History of Hip Hop</strong>
+                </a>
+
+                <!-- Collapse -->
+                <button class=" navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Links -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                    <!-- Left -->
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link waves-effect waves-light" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link waves-effect waves-light active" href="./BreakingPage.html">Breaking<span
+                                    class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link waves-effect waves-light" href="./MusicPage.html">Music</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link waves-effect waves-light" href="./DJingPage.html">MC</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link waves-effect waves-light" href="./GraffitiPage.html">Graffiti</a>
+                        </li>
+                    </ul>
+
+                    <!-- Right -->
+                    <ul class="navbar-nav nav-flex-icons">
+                        <li class="nav-item">
+                            <a href="https://www.facebook.com/profile.php?id=100000631027784"
+                                class="nav-link waves-effect waves-light" target="_blank">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="https://www.instagram.com/tfc_bohan/?hl=zh-tw"
+                                class="nav-link waves-effect waves-light" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="https://github.com/Tseng-Po-Han/PHTseng.github.io"
+                                class="nav-link border border-light rounded waves-effect waves-light" target="_blank">
+                                <i class="fab fa-github mr-2"></i>J. Tseng GitHub
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+        </nav>
+        <!-- navbar -->
+    </header>
+
+    <div class="bgimg-1">
+        <div class="caption">
+            <span class="border">BREAK DANCE</span>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-1"></div>
+
+        <div class="col-5">
+            <div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+                <h3 style="text-align:center;">街舞的多樣性</h3>
+                <p>街舞文化公認1970年代由MC <strong>Kool
+                        Herc</strong>開創連續不斷的音樂播放形式下才逐漸興起這於傳統社交舞蹈中脫穎而出的特殊文化。其後經歷80、90年代中各式不同的變遷、在美國東西岸有各自的發展脈絡，在揉合了各式文化與想法以後，今時今日已演變出多種不同的風格與演藝形式。
+
+                </p>
+            </div>
+
+        </div>
+        <div class="col-1"></div>
+        <div class="col-5">
+            <div class="bgimg-4">
+                <div class="caption">
+                    <span class="border">BREAK DANCE</span>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="bgimg-2">
+        <div class="caption">
+            <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">街舞起源</span>
+        </div>
+    </div>
+
+    <div style="position:relative;">
+        <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+            <h4>街舞歷史</h4>
+            <p>最原始的嘻哈文化從一九七〇年代開始，一位名叫酷海克（Kool Herc）的DJ開始。當時已經有許多DJ在放音樂，但Kool
+                Herc是技巧性最高，並且是把音樂放到大街上的先驅，他開放了自己的一塊空地，然後用超重音的喇叭撥放音樂。人群被音樂吸引而來，很自然地在空地中跳起舞。當時還沒有嘻哈（Hiphop）這個名字，只是一種派對和生活型態。
+
+                嘻哈（Hiphop）這個詞，是由當時兩大幫派之一的黑桃幫（The Black Spades）首領艾菲卡巴莫巴塔（Afrika
+                Bambaataa）所創造。原先這只是幫派中的黑話，但Bambaataa很喜歡這個詞所發出的聲音與意涵。「在派對中的屁股，當聽見音樂就會跳動。這就是我們所說的嘻哈。（This is ‘‘hip’’, when
+                you feel that music, you gonna ‘‘hop’’ absolutely. So that’s why we call it ‘‘Hiphop’’.）」Bambaataa
+                在接受「Bboyworld Asia採訪」的時候說道。而在嘻哈這個詞被創造的同時，厭倦血腥生活的Bambaataa於一九七三年十一月十八日，創立了「普世祖魯國度（Universal Zulu
+                Nation）」，並設立下了「和平、愛、團結與享受樂趣」四大原則，希望所有負面態度，都能轉換成正面思維，並且創造出一個貧民窟中和平的所在。</p>
+            <br>
+            <p>一九八〇年代是嘻哈文化最蓬勃的發展期，媒體大肆報導霹靂舞團與MC的新聞，甚至讓霹靂舞團站上了世界的舞台，然而媒體退潮之後，嘻哈文化中霹靂舞的部分就被稀釋了，逐漸被迪斯可（Disco）取代，而這時也出現了一些舞團誓言要傳承這項文化，像是「Rock
+                Steady
+                Crew」，此團的團名，便是意味著霹靂舞者的精神（Rock）能穩定發展（Steady）給下一代。雖然霹靂舞者的聲勢受到影響，但是MC與DJ都穩定發展著，其中的風格當然由時代不停變換，但是人們喜愛派對的熱情，絲毫未減。塗鴉部分則是從一開始不被世人接受，慢慢到被欣賞。一切雖然波折，但嘻哈文化的精神仍被完整保存了下來。
+            </p>
+            <br>
+            <p>文章來源：嘻哈起源，人們忘記的事。《喀報》第234期</p>
+        </div>
+    </div>
+
+    <div class="bgimg-3">
+        <div class="caption">
+            <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">臺灣的街舞歷史</span>
+        </div>
+    </div>
+
+    <div style="position:relative;">
+        <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+            <h4>臺灣街舞歷史</h4>
+            <!-- <p>臺灣自<strong>1987</strong>年解禁以後，多元的文化或次文化才漸漸有興起的空間。</p> -->
+            <p>大家好，我是BBOY Bojin，HRC的隊長。同時，我也是它的創始人。現在，我要簡略地介紹一下BBOY在台灣的歷史。</p>
+
+            <br>
+            <h4 style="text-align: left;">第一章：創意</h4>
+            <p>在80年代末，當時在台灣hiphop和Bboy仍是一個陌生的外來文化，還有一些著名的舞蹈隊開始從電視節目舞蹈比賽中開始他們的舞蹈事業，這些隊伍包括800Dragons，蓋世太保（Gansters），和The
+                Ninja。當時，還沒有形成一個獨特的舞種和舞蹈文化氛圍，那個時候模仿邁克爾杰克遜的風潮剛剛開始。人們會穿西裝或華麗的衣服去做MOVE比如WINDMILL和WAVE。這段歷史就是我們所謂的“霹靂舞時代。
+
+                90年代初，HIPHOP和Street dance被帶LABoyz（美國出生的台灣歌手）引入台灣。隨後，以Dancer Allen為首的The Party和以Dancer
+                Fish為首的Jungle開始引領了台灣地區的嘻哈文化。很多dancer受到這次熱潮的影響。他們開始穿寬鬆的褲子和T恤衫，並開始成為了街舞的一代人，而“breakin”詞正是在這個時候開始蔓延。
+            </p>
+            <br>
+            <h4 style="text-align: left;">第二章：推出的霹靂舞（breakin）</h4>
+            <p>1997年，Taipei Breaking Crew（TBC）成立了。Break dance和Bboy正式傳播開來，這是台灣第一隻BBOY
+                CREW。大約1997至1999年，幾乎每一個在北部和中部地區Bboy都屬於TBC。由於有的舞者離開了TBC，新的舞蹈室就誕生了。那就是Dance
+                Soul，著名的專業街舞和藝術培訓公司，該公司對其他風格的舞蹈作為重點（如HIPHOP,JAZZ,LOCKING,POPING,and House...等等）。
+
+                1990年末，Doobiest，該組織曾對台灣的嘻哈文化產生巨大影響，是由Goldie和第一個BBOY DJ
+                Chicano創辦的。他們以WORKSHOP思想為開端。當時互聯網的普及並不廣泛，很難獲取有關hiphop新的信息。Doobiest是把HIPHOP直接帶回台灣的始祖。帶回來的東西不僅是嘻哈服裝品牌Tribal，還舉行大型hiphop活動，邀請台灣著名的dancers（EasyRock,Ivan,and
+                Mr.Wiggles），來傳達hiphop精神和元素。直到現在, 由Doobiest創辦的the Hiphop Fiesta(嘻哈嘉年華)仍然是所有台灣dancer最有代表性的活動。
+
+                由於1991-2001這些年通過這些人的努力，台灣的bboy文化開始發展起來了。我正是屬於這一代的BBOY。我帶領的CREW-HRC(Hyper Rush Crew)，同時招收了一些高中bboy.
+
+                台灣bboy氛圍可分為3區，北，中，南台灣。因為每個小區只顧battle，卻很少交流信息，這些bboy在風格上分歧很大。
+                在台灣北部，有TBC(The Best Crew)，Rockers，SBC(Suicidal Breaking Crew), B-MAX, Old Top, SFC(Special Force
+                Crew)和JTZ.在台灣中部，有Double K, KGB (Keep Going Breaking ), and SG (Skill Gang).在南部的台灣,有KBC (Kaohsiung
+                Breaking Crew), Breaking crew BBOY Crew和the Air Style BBOY Union.
+
+                上述提到的那些bboy在當時非常出名，但其中大多數面臨同樣的問題：成員解散離隊。這是因為兵役，所有台灣男性成年人要面對的。只有少數bboys在服兵役後繼續他們的職業生涯。
+
+                這一代BBOY的breakin style受到了限制。這是由於接收信息的延遲，很多bboy的不知道的music和style的重要性。他們只去做powermoves,some
+                stiff和一些難度大的freeze 。但他們忽略了基礎,如toprock和footwork，他們不知道怎麼去把DANCE時與音樂融合起來。hiphop
+                party和活動在當時很少，所以在大街上和學校裡給他們機會並成為他們BATTLE的重要場所。同時在Hsimending的百貨公司的一場BATTLE吸引了公眾的視線。由於嘻哈活動如此頻繁，所以每一個活動都能吸引台灣幾乎所有bboys，並提供了更多的交流和討論。
+            </p>
+            <br>
+            <h4 style="text-align: left;">第三章：台灣Bboy發展</h4>
+            <p>2002年，台灣開始走向世界。
+
+                由BBOY Pachin帶隊的TBC參加了Freestyle Session日本站，寫下第一筆台灣Bboy走向國際舞台的歷史。2004年，中部台灣Bboy Crew- Double K參加BBOY UNIT
+                韓國站。TBC和KGB（來自台灣新竹）去參加了BOTY東南亞的比賽，並把冠軍回來。這個冠軍讓他們成為台灣首席CREW，成為了世界強隊之一。儘管這是在BOTY舞台的首次亮相，但他們幹得很漂亮，贏得了台灣有史以來的最好成績世界8強。不過，由於當時TBC的成員有一些分歧，造成一些bboy的離開，TBC慢慢地走向衰落了。
+
+                直到2005年，BOTY有了台灣賽區。它為台灣BBOY創造了走向世界舞台圓夢的機會。這一次，TBC聯合Double K和KGB再次獲得了冠軍，並再次前往德國與世界其他bboy參加BOYT2005。
+
+                在2003-2007年，商界開始看到：嘻哈文化非常重要，是許多青少年的最新趨勢。越來越多的活動的舉行，越來越多的外國信息，越來越多來自海外國家的街舞教學。這是一次台灣bboys和dancers進步的機會，變得更好，更強。舉例來說，TBC
+                Bboy Pachin成為台灣BOTY2006的主辦方。並有優秀的Bboy形成了一批隊伍，其中包括台灣北部的North-East Taiwan,Happy Soul和Top
+                Coalition(TC)，和來自台灣中部的Underground,Black-Angle Crew(BAC黑角舞團)。
+
+                台灣的第二個國際Bboy比賽於2006年和2007年舉辦了。Triple-Kill (The collaboration of TC and SBC)兩次奪得冠軍。我的CREW-HRC，獲得BOTY
+                2006台灣第一，然後在德國BOTY總決賽中獲得第九名。在同一年，BboyChoco和我去英國參加UK BBOY CHAMPIONSHIPS BBOY
+                SOLO，我們是最早的兩個來參加這個比賽的BBOY。然而，BboyChoco和B-Mouth因為意見分歧離開了HRC。他們聯合了不同的隊伍bboys，如TBC，Happy
+                Soul，SBC，TC和KGB，成為台灣BBOY精英聯隊，這個CREW就叫做Fomosa。他們贏得了BOYT2007台灣的冠軍，並去大陸參加了UK CHAMPIONSHIP
+                2007年，重新贏得了冠軍，並獲得去UK BBOY CHAMPIONSHIP的票。
+
+                2007年，國際領先的比賽，亞洲的賽區初步定在台灣舉行。並在2007年年底，Bboy A-zone（HRC）受到法國Style2ouf（在歐洲最大的街舞網站）的邀請，
+                他曾在台灣與Style2ouf隊和Trickmania進行了友誼BATTLE，並成功地吸引了來自其他國家的bboys關注。
+
+                這些我在上面所提到的，代表了台灣bboy的進步和對台灣嘻哈文化的認同。我們努力著團結所有的台灣舞者。我們不僅努力推動著台灣bboying，也發揚著台灣優點。
+
+                現在，台灣不再是沒有BBOY的世界。我們參與了多國際活動，並受到邀請不同國家的邀請。當然，這不是結束。仍然有很多事情要做，很多事情等待著完成的。我們擁有相同的目標，尊重每一個人，創造我們自己的台灣Bboy風格。最後，我們將繼續努力爭取拿到每一個國際比賽的冠軍。
+            </p>
+            <p style="color: orange;"><strong>文章來源：luyass，Bboying in Taiwan 臺灣bboy歷史。嘻哈之城</strong></p>
+        </div>
+    </div>
+
+    <div class="bgimg-1">
+        <div class="caption">
+            <span class="border">COOL!</span>
+        </div>
+    </div>
+
+
+    <br>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-4">
+
+            </div>
+            <div class="col-4">
+                <form>
+                    <h4>錯誤內容更正或新知分享~！</h4>
+                    <p>如果網站中有任何與您認知有誤的內容，或您有任何願意補充分享的嘻哈文化小知識、歷史小故事，都非常歡迎並感謝您賜教與大方分享喔~！</p>
+
+
+                    <label for="Q1">錯誤的內容？</label><br>
+                    <!-- id="entry_94276115" -->
+                    <input type="text" class="entry_94276115" name="entry.94276115" id="Q1">
+                    <br>
+
+                    <!-- id="entry_640303386" -->
+                    <label for="Q2">歷史小故事？</label><br>
+                    <input type="text" class="entry_640303386" name="entry.640303386" id="Q2">
+
+
+                    <!-- <input type="submit" class="submit" value="Submit" id=""> -->
+                    <input type="submit" class="submit" value="Submit" id="">
+
+
+
+                </form>
+
+            </div>
+            <div class="col-4">
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="container-fluid text-center font-small wow fadeIn"
+        style="visibility: visible; animation-name: fadeIn; margin-top: 0rem;" id="Contact">
+        <!--Copyright-->
+        <div class=" footer-copyright py-3" style="color: black;background-color: white;">
+            © 2020 Copyright:<a target="_blank"> P.-H. Tseng</a>
+        </div>
+        <!--/.Copyright-->
+
+        <!--Footer-->
+        <!-- <footer class="page-footer text-center font-small wow fadeIn bg-secondary"
+                    style="visibility: visible; animation-name: fadeIn; margin-top: 0rem;" id="Contact"></footer> -->
+        <!--/.Footer-->
+
+    </div>
+
+
+    <!-- 為了ajax以及getScript使用完整版的JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- 因為已經使用了完整版的JQuery所以就可以先隱蔽起來 -->
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script> -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+
+    <!-- google表單會用到的script -->
+    <script src="./Form.js"></script>
+
+
+</body>
+
+</html>

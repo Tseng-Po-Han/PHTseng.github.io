@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<!-- saved from url=(0060)https://www.w3schools.com/howto/tryhow_css_parallax_demo.htm -->
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History of Hip Hop</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <style>
+        body,
+        button,
+        input,
+        select,
+        textarea,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: MicrosoftYaHei, '宋體', Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;
+        }
+
+
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+            font: 400 15px/1.8 "Lato", sans-serif;
+            color: #777;
+        }
+
+        .bgimg-1,
+        .bgimg-2,
+        .bgimg-3 {
+            position: relative;
+            opacity: 0.65;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+
+        .bgimg-1 {
+            background-image: url("./CollegeHighvol.14_flare.jpg");
+            min-height: 100%;
+        }
+
+        .bgimg-2 {
+            background-image: url("./DMF_Final.jpg");
+            min-height: 400px;
+        }
+
+        .bgimg-3 {
+            background-image: url("./FrontTheTDC.jpg");
+            min-height: 400px;
+        }
+
+        .caption {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            width: 100%;
+            text-align: center;
+            color: #000;
+        }
+
+        .caption span.border {
+            background-color: #111;
+            color: #fff;
+            padding: 18px;
+            font-size: 25px;
+            letter-spacing: 10px;
+        }
+
+        h3 {
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            font: 20px "Lato", sans-serif;
+            color: #111;
+        }
+
+        /* Turn off parallax scrolling for tablets and phones */
+        @media only screen and (max-device-width: 1024px) {
+
+            .bgimg-1,
+            .bgimg-2,
+            .bgimg-3 {
+                background-attachment: scroll;
+            }
+        }
+
+        audio {
+            width: 80%;
+
+            position: absolute;
+            left: 50%;
+            top: 50%;
+
+            margin-left: -40%;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="Menu">
+        <!-- navbar -->
+        <nav class="navbar navbar-dark fixed-top navbar-expand-lg scrolling-navbar" style="background-color: black;">
+            <!--navbar-dark-->
+            <div class="container-fluid">
+
+                <!-- Brand -->
+                <a class="navbar-brand" href="./index.html">
+                    <strong>History of Hip Hop</strong>
+                </a>
+
+                <!-- Collapse -->
+                <button class=" navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Links -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                    <!-- Left -->
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link waves-effect waves-light" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link waves-effect waves-light" href="./BreakingPage.html">Breaking</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link waves-effect waves-light active" href="./MusicPage.html">Music<span
+                                    class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link waves-effect waves-light" href="./DJingPage.html">MC</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link waves-effect waves-light" href="./GraffitiPage.html">Graffiti</a>
+                        </li>
+                    </ul>
+
+                    <!-- Right -->
+                    <ul class="navbar-nav nav-flex-icons">
+                        <li class="nav-item">
+                            <a href="https://www.facebook.com/profile.php?id=100000631027784"
+                                class="nav-link waves-effect waves-light" target="_blank">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="https://www.instagram.com/tfc_bohan/?hl=zh-tw"
+                                class="nav-link waves-effect waves-light" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="https://github.com/Tseng-Po-Han/PHTseng.github.io"
+                                class="nav-link border border-light rounded waves-effect waves-light" target="_blank">
+                                <i class="fab fa-github mr-2"></i>J. Tseng GitHub
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+        </nav>
+        <!-- navbar -->
+    </header>
+
+    <div class="bgimg-1">
+        <div class="caption">
+            <span class="border">Music of Hip Hop</span>
+        </div>
+    </div>
+
+    <div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+        <h3 style="text-align:center;">街舞音樂的種類</h3>
+        <p>了解清楚街舞音樂種類到底是一種怎麼樣的存在，是解決一切問題的關鍵。 把街舞音樂種類輕鬆帶過，顯然並不適合。 我們不得不相信，經過上述討論，街舞音樂種類對我來說有著舉足輕重的地位，必須要嚴肅認真的看待。
+            現在，正視街舞音樂種類的問題，是非常非常重要的。 因為，我認為，迪斯累利說過一句富有哲理的話，財富的增長和閒暇的增多是人類文明的二大要素。 但願各位能從這段話中獲得心靈上的滋長。
+            街舞音樂種類必定會成為未來世界的新標準。 謹慎地來說，我們必須考慮到所有可能。
+
+            黑塞人說過一句發人省思的話，有勇氣承擔命運這才是英雄好漢。 這句話看似簡單，但其中的陰鬱不禁讓人深思。 莊子曾說過一句意義深遠的話，同類相比，同聲相應，固天理也。 這句話看似簡單，但其中的陰鬱不禁讓人深思。
+            若沒有街舞音樂種類的存在，那麼後果可想而知。 透過逆向歸納，得以用最佳的策略去分析街舞音樂種類。 我們需要淘汰舊有的觀念，我們普遍認為，若能理解透徹核心原理，對其就有了一定的了解程度。
+            第斯多惠深信，教學的藝術不在於傳授本領，而在善於激勵喚醒和鼓舞。 這把視野帶到了全新的高度。 拜倫說過，要使婚姻長久，就需克服自我中心意識。 想必各位已經看出了其中的端倪。
+            若無法徹底理解街舞音樂種類，恐怕會是人類的一大遺憾。 世界上若沒有街舞音樂種類，對於人類的改變可想而知。 深入的探討街舞音樂種類，是釐清一切的關鍵。 街舞音樂種類的存在，令我無法停止對他的思考。
+            我們都有個共識，若問題很困難，那就勢必不好解決。 若到今天結束時我們都還無法釐清街舞音樂種類的意義，那想必我們昨天也無法釐清。 回過神才發現，思考街舞音樂種類的存在意義，已讓我廢寢忘食。
+            高爾基說過一句發人省思的話，人如果沒有良心，哪怕有天大的聰明也活不下去。 強烈建議大家把這段話牢牢記住。 我們都知道，只要有意義，那麼就必須慎重考慮。 蓬皮杜曾經提過，命運就是對一個人的才能考驗的偶然。
+            這讓我對於看待這個問題的方法有了巨大的改變。 席勒講過，真理常常藏在事物的深底。 這段話非常有意思。 列寧在不經意間這樣說過，政治就是各階級之間的鬥爭。 請諸位將這段話在心中默念三遍。
+            想必大家都能了解街舞音樂種類的重要性。 對街舞音樂種類進行深入研究，在現今時代已經無法避免了。 不要先入為主覺得街舞音樂種類很複雜，實際上，街舞音樂種類可能比你想的還要更複雜。
+        </p>
+    </div>
+
+    <div class="bgimg-2">
+        <div class="caption">
+            <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">街舞音樂起源</span>
+        </div>
+    </div>
+
+    <div style="position:relative;">
+        <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+            <h4>街舞音樂起源</h4>
+            <p>謹慎地來說，我們必須考慮到所有可能。 想必大家都能了解街舞音樂起源的重要性。 如果別人做得到，那我也可以做到。 問題的核心究竟是什麼? 問題的關鍵究竟為何?
+                看看別人，再想想自己，會發現問題的核心其實就在你身旁。
+
+                面對如此難題，我們必須設想周全。 那麼，領悟其中的道理也不是那麼的困難。 對於街舞音樂起源，我們不能不去想，卻也不能走火入魔。 街舞音樂起源的發生，到底需要如何實現，不街舞音樂起源的發生，又會如何產生。
+
+                就我個人來說，街舞音樂起源對我的意義，不能不說非常重大。 我們不得不相信，若沒有街舞音樂起源的存在，那麼後果可想而知。 施企巴喬夫曾經提到過，愛情是一本永恆的書，有人只是信手拈來瀏覽過幾個片斷。
+                有人卻流連忘返，為它灑下熱淚斑斑。 這段話的餘韻不斷在我腦海中迴盪著。 培根說過一句很有意思的話，好的運氣令人羨慕，而戰勝厄運則更令人驚嘆。 這啟發了我。 儘管如此，別人往往卻不這麼想。
+                巴爾扎克曾經提過，我們戀愛可能不感到快樂，也可能快樂而並非戀愛。 這段話雖短，卻足以改變人類的歷史。 了解清楚街舞音樂起源到底是一種怎麼樣的存在，是解決一切問題的關鍵。 總結來說，動機，可以說是最單純的力量。
+                我以為我了解街舞音樂起源，但我真的了解街舞音樂起源嗎? 仔細想想，我對街舞音樂起源的理解只是皮毛而已。 既然，布萊希特曾提出，真理是時間的孩子，不是權威的孩子。 希望大家實際感受一下這段話。
+                貝多芬曾經認為，苦難是人生的老師。 通過苦難，走向歡樂。 這句話反映了問題的急切性。 從這個角度來看，街舞音樂起源因何而發生? 西倫佩說過一句富有哲理的話，衝擊一次，就忘掉，在新的局面下繼續生活下去。
+                這影響了我的價值觀。 透過逆向歸納，得以用最佳的策略去分析街舞音樂起源。 現在，正視街舞音樂起源的問題，是非常非常重要的。 因為，若無法徹底理解街舞音樂起源，恐怕會是人類的一大遺憾。
+                這必定是個前衛大膽的想法。 洛克曾經提過，學到很多東西的訣竅，就是一下子不要學很多。 希望大家能發現話中之話。 黑格爾講過一段耐人尋思的話，他是他自己本身的目的他自身中有一種無限的價值、一種永恆的使命。
+                這段話讓我的心境提高了一個層次。 約爾旦講過一段深奧的話，智慧表現在下一次該怎麼做，美德則表現在行為本身。 希望大家實際感受一下這段話。</p>
+        </div>
+    </div>
+
+    <div class="bgimg-3">
+        <div class="caption">
+            <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">臺灣街舞音樂文化</span>
+        </div>
+    </div>
+
+    <div style="position:relative;">
+        <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+            <p>儘管如此，別人往往卻不這麼想。 臺灣音樂文化的發生，到底需要如何實現，不臺灣音樂文化的發生，又會如何產生。 在這種困難的抉擇下，本人思來想去，寢食難安。
+                對我個人而言，臺灣音樂文化不僅僅是一個重大的事件，還可能會改變我的人生。 這必定是個前衛大膽的想法。 我們要從本質思考，從根本解決問題。
+                洛德凱特寇得說過一句很有意思的話，經理人員的任務則在於知人善任，提供企業一個平衡、密合的工作組織。 這段話的餘韻不斷在我腦海中迴盪著。 我們一般認為，抓住了問題的關鍵，其他一切則會迎刃而解。
+                探討臺灣音樂文化時，如果發現非常複雜，那麼想必不簡單。 其實，若思緒夠清晰，那麼臺灣音樂文化也就不那麼複雜了。 話雖如此，我們卻也不能夠這麼篤定。 問題的關鍵究竟為何? 領悟其中的道理也不是那麼的困難。
+                帶著這些問題，我們一起來審視臺灣音樂文化。 我們不得不相信，老舊的想法已經過時了。 我以為我了解臺灣音樂文化，但我真的了解臺灣音樂文化嗎? 仔細想想，我對臺灣音樂文化的理解只是皮毛而已。
+                如果仔細思考臺灣音樂文化，會發現其中蘊含的深遠意義。 對於一般人來說，臺灣音樂文化究竟象徵著什麼呢? 龐陀彼丹曾經說過，人當活在真理和自我奉獻裡。 這段話看似複雜，其中的邏輯思路卻清晰可見。
+                本人也是經過了深思熟慮，在每個日日夜夜思考這個問題。 若能夠洞悉臺灣音樂文化各種層面的含義，勢必能讓思維再提高一個層級。 在這種不可避免的衝突下，我們必須解決這個問題。
+                儘管臺灣音樂文化看似不顯眼，卻佔據了我的腦海。 儘管如此，我們仍然需要對臺灣音樂文化保持懷疑的態度。 不要先入為主覺得臺灣音樂文化很複雜，實際上，臺灣音樂文化可能比你想的還要更複雜。
+                每個人的一生中，幾乎可說碰到臺灣音樂文化這件事，是必然會發生的。 如果此時我們選擇忽略臺灣音樂文化，那後果可想而知。 總結來說，我們可以很篤定的說，這需要花很多時間來嚴謹地論證。
+                臺灣音樂文化對我來說，已經成為了我生活的一部分。
+                我們需要淘汰舊有的觀念，甘地曾經說過，父母用他慈愛的眼淚，洗淨我污濁的心靈，用愛心代替鞭打，他的眼淚勝過千言萬語的訓誡，愈加堅定我改過向善的決心，雖然當時我準備接受任何嚴厲的處罰，如果父親真的責備我，可能會引起我的反感，而無益於我德性的進長。
+                這激勵了我。 回過神才發現，思考臺灣音樂文化的存在意義，已讓我廢寢忘食。 話雖如此，生活中，若臺灣音樂文化出現了，我們就不得不考慮它出現了的事實。 臺灣音樂文化，發生了會如何，不發生又會如何。</p>
+        </div>
+    </div>
+
+    <div class="bgimg-1">
+        <div class="caption">
+            <span class="border">COOL!</span>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="container-fluid">
+        <div class="row" style="background-color: darkseagreen;">
+            <div class="col" style="background-color: cadetblue;"></div>
+
+            <div class="col"></div>
+            <div class="col">
+                <h3 style="text-align: center;min-height: 50px;padding-top: 20px;">街舞音樂範例</h3>
+            </div>
+            <div class="col"></div>
+
+            <div class="col" style="background-color: cadetblue;"></div>
+
+        </div>
+
+
+        <!-- 第一列音樂檔 -->
+        <div class="row">
+            <div class="col" style="background-color: cadetblue;"></div>
+
+            <div class="col" style="min-height: 300px;padding-top: 100px;">
+                <h5 style="text-align: center;">Classic Bboy Mixtape</h5>
+                <audio controls src="./old-school-mixtape-bboy-dj-dark-knight-bboy-mixtape-2017.mp3"></audio>
+
+            </div>
+            <div class="col" style="min-height: 300px;padding-top: 100px;">
+                <h4 style="text-align: center;">Funk house</h4>
+                <audio controls src="Julian the Angel - Sambapiano (Original Mix).mp3"></audio>
+            </div>
+            <div class="col" style="min-height: 300px;padding-top: 100px;">
+                <h4 style="text-align: center;">Vogue music</h4>
+                <audio controls src="./tens-neutron-remix.mp3"></audio>
+            </div>
+
+            <div class="col" style="background-color: cadetblue;"></div>
+
+
+        </div>
+        <!-- 第一列音樂檔 -->
+
+
+        <div class="row">
+            <div class="col" style="background-color: cadetblue;"></div>
+
+            <div class="col" style="min-height: 20px;"></div>
+            <div class="col" style="min-height: 20px;"></div>
+            <div class="col" style="min-height: 20px;"></div>
+
+            <div class="col" style="background-color: cadetblue;"></div>
+
+        </div>
+
+        <!-- 第二列音樂檔 -->
+        <div class="row">
+            <div class="col" style="background-color: cadetblue;"></div>
+
+            <div class="col" style="min-height: 300px;padding-top: 100px;">
+                <h4 style="text-align: center;">Locking</h4>
+                <audio controls src="./funk-mix-44min-dj-craims.mp3"></audio>
+            </div>
+            <div class="col" style="min-height: 300px;padding-top: 100px;">
+                <h4 style="text-align: center;">Popping</h4>
+                <audio controls src="./jaygee-rmc-keep-on-dancing.mp3"></audio>
+            </div>
+            <div class="col" style="min-height: 300px;padding-top: 100px;">
+                <h4 style="text-align: center;">Hip Hop</h4>
+                <audio controls src="./hypnotize.mp3"></audio>
+            </div>
+
+            <div class="col" style="background-color: cadetblue;"></div>
+
+        </div>
+        <!-- 第二列音樂檔 -->
+
+    </div>
+
+    <br>
+
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-2" style="background-color: rgb(16, 153, 130)"></div>
+
+            <div class="col-2" style="background-color: rgb(241, 241, 250);"></div>
+
+            <div class=" col-4" style="padding: 1rem;background-color: rgb(241, 241, 250);">
+                <form>
+                    <h4 style="color: black;">錯誤內容更正或新知分享~！</h4>
+                    <p style="color: black;">如果網站中有任何與您認知有誤的內容，或您有任何願意補充分享的嘻哈文化小知識、歷史小故事，都非常歡迎並感謝您賜教與大方分享喔~！</p>
+
+
+                    <label for="Q1" style="color: black;">錯誤的內容？</label><br>
+                    <!-- id="entry_94276115" -->
+                    <input type="text" class="entry_94276115" name="entry.94276115" id="Q1">
+                    <br>
+
+                    <!-- id="entry_640303386" -->
+                    <label for="Q2" style="color: black;">歷史小故事？</label><br>
+                    <input type="text" class="entry_640303386" name="entry.640303386" id="Q2">
+
+
+                    <!-- <input type="submit" class="submit" value="Submit" id=""> -->
+                    <input type="submit" class="submit" value="Submit" id="">
+                </form>
+            </div>
+
+            <div class="col-2" style="background-color: rgb(241, 241, 250);"></div>
+            <div class="col-2" style="background-color: rgb(16, 153, 130)"></div>
+
+        </div>
+
+    </div>
+
+    <div class=" container-fluid text-center font-small wow fadeIn"
+        style="visibility: visible; animation-name: fadeIn; margin-top: 0rem;" id="Contact">
+        <!--Copyright-->
+        <div class=" footer-copyright py-3" style="color: black;background-color: white;">
+            © 2020 Copyright:<a target="_blank"> P.-H. Tseng</a>
+        </div>
+        <!--/.Copyright-->
+
+        <!--Footer-->
+        <!-- <footer class="page-footer text-center font-small wow fadeIn bg-secondary"
+                    style="visibility: visible; animation-name: fadeIn; margin-top: 0rem;" id="Contact"></footer> -->
+        <!--/.Footer-->
+
+    </div>
+
+
+    <!-- 為了ajax以及getScript使用完整版的JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="./video.js">
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+
+
+</body>
+
+</html>

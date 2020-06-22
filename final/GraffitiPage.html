@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<!-- saved from url=(0060)https://www.w3schools.com/howto/tryhow_css_parallax_demo.htm -->
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History of Hip Hop</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <style>
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+            font: 400 15px/1.8 "Lato", sans-serif;
+            color: #777;
+        }
+
+        .bgimg-1,
+        .bgimg-2,
+        .bgimg-3 {
+            position: relative;
+            opacity: 0.65;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+
+        .bgimg-1 {
+            background-image: url("./CollegeHighvol.14_flare.jpg");
+            min-height: 100%;
+        }
+
+        .bgimg-2 {
+            background-image: url("./DMF_Final.jpg");
+            min-height: 400px;
+        }
+
+        .bgimg-3 {
+            background-image: url("./FrontTheTDC.jpg");
+            min-height: 400px;
+        }
+
+        .caption {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            width: 100%;
+            text-align: center;
+            color: #000;
+        }
+
+        .caption span.border {
+            background-color: #111;
+            color: #fff;
+            padding: 18px;
+            font-size: 25px;
+            letter-spacing: 10px;
+        }
+
+        h3 {
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            font: 20px "Lato", sans-serif;
+            color: #111;
+        }
+
+        /* Turn off parallax scrolling for tablets and phones */
+        @media only screen and (max-device-width: 1024px) {
+
+            .bgimg-1,
+            .bgimg-2,
+            .bgimg-3 {
+                background-attachment: scroll;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header id="Menu">
+        <!-- navbar -->
+        <nav class="navbar navbar-dark fixed-top navbar-expand-lg scrolling-navbar" style="background-color: black;">
+            <!--navbar-dark-->
+            <div class="container-fluid">
+
+                <!-- Brand -->
+                <a class="navbar-brand" href="./index.html">
+                    <strong>History of Hip Hop</strong>
+                </a>
+
+                <!-- Collapse -->
+                <button class=" navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Links -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                    <!-- Left -->
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link waves-effect waves-light" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link waves-effect waves-light" href="./BreakingPage.html">Breaking</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link waves-effect waves-light" href="./MusicPage.html">Music</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link waves-effect waves-light" href="./DJingPage.html">MC</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link waves-effect waves-light active" href="./GraffitiPage.html">Graffiti<span
+                                    class="sr-only">(current)</span></a>
+                        </li>
+                    </ul>
+
+                    <!-- Right -->
+                    <ul class="navbar-nav nav-flex-icons">
+                        <li class="nav-item">
+                            <a href="https://www.facebook.com/profile.php?id=100000631027784"
+                                class="nav-link waves-effect waves-light" target="_blank">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="https://www.instagram.com/tfc_bohan/?hl=zh-tw"
+                                class="nav-link waves-effect waves-light" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="https://github.com/Tseng-Po-Han/PHTseng.github.io"
+                                class="nav-link border border-light rounded waves-effect waves-light" target="_blank">
+                                <i class="fab fa-github mr-2"></i>J. Tseng GitHub
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+        </nav>
+        <!-- navbar -->
+    </header>
+
+    <div class="bgimg-1">
+        <div class="caption">
+            <span class="border">街頭藝術師</span>
+        </div>
+    </div>
+
+    <div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+        <h3 style="text-align:center;">塗鴉歷史</h3>
+        <p>世界需要改革，需要對塗鴉起源有新的認知。 一般來說，所謂塗鴉起源，關鍵是塗鴉起源需要如何解讀。 列寧說過一句富有哲理的話，在純粹的光明中就像在純黑暗中一。 這是撼動人心的。
+            若無法徹底理解塗鴉起源，恐怕會是人類的一大遺憾。 聞一多講過一句值得人反覆尋思的話，個人之於社會等於身體的細胞，要一個人身體健全，不用說必須每個細胞都健全。 這影響了我的價值觀。
+            聖經講過一段耐人尋思的話，寧可往房頂的角上，也不可在寬敞的房子與潑婦同住。 這句話看似簡單，但其中的陰鬱不禁讓人深思。 了解清楚塗鴉起源到底是一種怎麼樣的存在，是解決一切問題的關鍵。
+            布埃斯特說過一句富有哲理的話，真理的蠟燭，常常會烯傷那些舉燭人的手。 請諸位將這段話在心中默念三遍。 塗鴉起源可以說是有著成為常識的趨勢。 裴斯泰洛齊說過一句發人省思的話，今天應做的事沒有做，明天再早也是耽誤了。
+            這似乎解答了我的疑惑。 我們都知道，只要有意義，那麼就必須慎重考慮。 做好塗鴉起源這件事，可以說已經成為了全民運動。
+
+            把塗鴉起源輕鬆帶過，顯然並不適合。 塗鴉起源絕對是史無前例的。 沃夫格曾說過一句意義深遠的話，要我們買他的誠實，這種人出售的是他的名譽。 這讓我的思緒清晰了。 我們可以很篤定的說，這需要花很多時間來嚴謹地論證。
+            我們都有個共識，若問題很困難，那就勢必不好解決。 總結來說，若到今天結束時我們都還無法釐清塗鴉起源的意義，那想必我們昨天也無法釐清。 對於塗鴉起源，我們不能不去想，卻也不能走火入魔。
+            那麼，塗鴉起源的存在，令我無法停止對他的思考。 我想，把塗鴉起源的意義想清楚，對各位來說並不是一件壞事。 我們需要淘汰舊有的觀念，西德尼曾說過一句意義深遠的話，做好事是人生中唯一確實快樂的行動。
+            希望各位能用心體會這段話。 對塗鴉起源進行深入研究，在現今時代已經無法避免了。 其實，若思緒夠清晰，那麼塗鴉起源也就不那麼複雜了。 回過神才發現，思考塗鴉起源的存在意義，已讓我廢寢忘食。
+            杰弗遜講過一句值得人反覆尋思的話，對驕傲的人不要謙虛，對謙虛的人不要驕傲。 想必各位已經看出了其中的端倪。 話雖如此，聖經相信，壞消息如生雙翅，乘風而去，好消。 他會這麼說是有理由的。
+            傅玄曾講過，同聲自相應，同心自相知。 這段話非常有意思。
+
+            對我個人而言，塗鴉起源不僅僅是一個重大的事件，還可能會改變我的人生。
+        </p>
+    </div>
+
+    <div class="bgimg-2">
+        <div class="caption">
+            <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">塗鴉風格</span>
+        </div>
+    </div>
+
+    <div style="position:relative;">
+        <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+            <p>每個人都不得不面對這些問題。 在面對這種問題時，務必詳細考慮塗鴉風格的各種可能。 探討塗鴉風格時，如果發現非常複雜，那麼想必不簡單。 穆勒說過一句很有意思的話，個人的自由必須有所限度，不得因為自己的而妨礙他人。
+                這啟發了我。 錢大昕說過，晚飯少吃口，活到九十九。 這啟發了我。 對塗鴉風格進行深入研究，在現今時代已經無法避免了。 若到今天結束時我們都還無法釐清塗鴉風格的意義，那想必我們昨天也無法釐清。
+                這種事實對本人來說意義重大，相信對這個世界也是有一定意義的。 塗鴉風格勢必能夠左右未來。 問題的核心究竟是什麼? 老子說過一句富有哲理的話，天下難事，必作於易; 天下大事，必作於細。
+                這讓我對於看待這個問題的方法有了巨大的改變。 我以為我了解塗鴉風格，但我真的了解塗鴉風格嗎? 仔細想想，我對塗鴉風格的理解只是皮毛而已。 帶著這些問題，我們一起來審視塗鴉風格。
+                徐特立講過，勤工儉學的意義還在於它能夠培養和發揮青年的創造性和才能。 如果我們給青年安排一條輕便的道路，他們只須飯來張嘴，上課就唸書，什麼也不管，這樣我們就會害了青年，會使聰明人也變成傻瓜。
+                他會這麼說是有理由的。 如果別人做得到，那我也可以做到。 從這個角度來看，我們不妨可以這樣來想: 就我個人來說，塗鴉風格對我的意義，不能不說非常重大。 在人類的歷史中，我們總是盡了一切努力想搞懂塗鴉風格。
+                伏爾泰在過去曾經講過，祖國是我們心心嚮往的地方。 這句話讓我們得到了一個全新的觀點去思考這個問題。 薩克雷曾說過，金錢可以買“食物”; 但不能買“食慾”。 這句話語雖然很短，但令我浮想聯翩。
+                我們不得不相信，若無法徹底理解塗鴉風格，恐怕會是人類的一大遺憾。 我認為，愛因斯坦說過一句很有意思的話，提出一個問題往往比解決一個問題更重要，因為解決問題也許僅僅是一個教學上或實驗上的技能而已。
+                而提出新的問題新的可能性，從新的角度去看舊的問題，都需要有創造性的想像力，而且標誌著科學的真正進步。 這啟發了我。 陶行知深信，科學的使命，是要造福社會，而不是造福個人。 這句話反映了問題的急切性。
+                而這些並不是完全重要，更加重要的問題是，塗鴉風格的出現，必將帶領人類走向更高的巔峰。 都德說過一句發人省思的話，女人的眼睛總是比較敏銳的，哪怕是對世上的壞事全然無知的最老實的女人有時也會突然閃現出驚人的睿智。
+                這是撼動人心的。 在這種不可避免的衝突下，我們必須解決這個問題。 儘管如此，別人往往卻不這麼想。</p>
+        </div>
+    </div>
+
+    <div class="bgimg-3">
+        <div class="caption">
+            <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">臺灣塗鴉文化</span>
+        </div>
+    </div>
+
+    <div style="position:relative;">
+        <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+            <p>愛獻生講過，人類的全部歷史都告誡有智慧的人，不要篤信時運，而應堅信思想。 這把視野帶到了全新的高度。 既然，這必定是個前衛大膽的想法。 每個人都不得不面對這些問題。
+                在面對這種問題時，務必詳細考慮臺灣塗鴉文化的各種可能。 問題的核心究竟是什麼? 威瑟說過，熱得快的愛情，冷得也快。 這句話語雖然很短，但令我浮想聯翩。
+                我想，把臺灣塗鴉文化的意義想清楚，對各位來說並不是一件壞事。 如果別人做得到，那我也可以做到。 查普曼說過一句富有哲理的話，誰都沒有真正的愛情，而只有一見鍾情。 這讓我的思緒清晰了。
+                回過神才發現，思考臺灣塗鴉文化的存在意義，已讓我廢寢忘食。 要想清楚，臺灣塗鴉文化，到底是一種怎麼樣的存在。 對臺灣塗鴉文化進行深入研究，在現今時代已經無法避免了。 孟子深信，盡信《書》，則不如無《書》。
+                希望各位能用心體會這段話。 對於一般人來說，臺灣塗鴉文化究竟象徵著什麼呢? 老子相信，師之所處，荊棘生焉。 大軍之後，必有凶年。 這是撼動人心的。 所謂臺灣塗鴉文化，關鍵是臺灣塗鴉文化需要如何解讀。
+                塞內加曾說過，事實上，思想就是力量。 個性的力。 這似乎解答了我的疑惑。 對於臺灣塗鴉文化，我們不能不去想，卻也不能走火入魔。
+                高爾基講過一段深奧的話，我知道什麽是勞動：勞動是世界上一切歡樂和一切美好事情的源泉。 強烈建議大家把這段話牢牢記住。 臺灣塗鴉文化，到底應該如何實現。
+
+                我們都很清楚，這是個嚴謹的議題。 儘管臺灣塗鴉文化看似不顯眼，卻佔據了我的腦海。 領悟其中的道理也不是那麼的困難。 若能夠洞悉臺灣塗鴉文化各種層面的含義，勢必能讓思維再提高一個層級。
+                我們不得不相信，可是，即使是這樣，臺灣塗鴉文化的出現仍然代表了一定的意義。 臺灣塗鴉文化勢必能夠左右未來。 若無法徹底理解臺灣塗鴉文化，恐怕會是人類的一大遺憾。
+                托爾斯泰說過一句著名的話，人生不是一種享東，而一樁十分沈重的工作。 這段話非常有意思。 塞內加曾提出，肚子是聽不進勸告的。 這句話幾乎解讀出了問題的根本。 臺灣塗鴉文化的出現，必將帶領人類走向更高的巔峰。
+                儘管如此，我們仍然需要對臺灣塗鴉文化保持懷疑的態度。 話雖如此，臺灣塗鴉文化必定會成為未來世界的新標準。 喬叟相信，世界是一條龍充滿苦惱的大道，而我們是來去匆匆的旅人; 死亡是世上每個人的歸宿。
+                這把視野帶到了全新的高度。 不要先入為主覺得臺灣塗鴉文化很複雜，實際上，臺灣塗鴉文化可能比你想的還要更複雜。</p>
+        </div>
+    </div>
+
+    <div class="bgimg-1">
+        <div class="caption">
+            <span class="border">塗鴉！</span>
+        </div>
+    </div>
+
+    <br>
+
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-4">
+
+            </div>
+            <div class="col-4">
+                <form>
+                    <h4>錯誤內容更正或新知分享~！</h4>
+                    <p>如果網站中有任何與您認知有誤的內容，或您有任何願意補充分享的嘻哈文化小知識、歷史小故事，都非常歡迎並感謝您賜教與大方分享喔~！</p>
+
+
+                    <label for="Q1">錯誤的內容？</label><br>
+                    <!-- id="entry_94276115" -->
+                    <input type="text" class="entry_94276115" name="entry.94276115" id="Q1">
+                    <br>
+
+                    <!-- id="entry_640303386" -->
+                    <label for="Q2">歷史小故事？</label><br>
+                    <input type="text" class="entry_640303386" name="entry.640303386" id="Q2">
+
+
+                    <!-- <input type="submit" class="submit" value="Submit" id=""> -->
+                    <input type="submit" class="submit" value="Submit" id="">
+
+
+
+                </form>
+
+            </div>
+            <div class="col-4">
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="container-fluid text-center font-small wow fadeIn"
+        style="visibility: visible; animation-name: fadeIn; margin-top: 0rem;" id="Contact">
+        <!--Copyright-->
+        <div class=" footer-copyright py-3" style="color: black;background-color: white;">
+            © 2020 Copyright:<a target="_blank"> P.-H. Tseng</a>
+        </div>
+        <!--/.Copyright-->
+
+        <!--Footer-->
+        <!-- <footer class="page-footer text-center font-small wow fadeIn bg-secondary"
+                    style="visibility: visible; animation-name: fadeIn; margin-top: 0rem;" id="Contact"></footer> -->
+        <!--/.Footer-->
+
+    </div>
+
+
+
+
+
+    <!-- 為了ajax以及getScript使用完整版的JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script> -->
+    <script src="./video.js">
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+
+
+</body>
+
+</html>

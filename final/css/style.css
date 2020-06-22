@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+}
+
+canvas {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+input {
+    width: 100%;
+}
+
+/* html {
+  cursor: url("https://res.cloudinary.com/dzckyfkls/image/upload/c_scale,w_32/v1580220501/NicePng_spray-png_910985.png"), auto;
+  background-image: url(https://res.cloudinary.com/dzckyfkls/image/upload/v1580236049/concrete.jpg);
+} */
+
+canvas {
+    cursor: url("https://res.cloudinary.com/dzckyfkls/image/upload/c_scale,w_32/v1580220501/NicePng_spray-png_910985.png"), auto;
+    background-image: url(https://res.cloudinary.com/dzckyfkls/image/upload/v1580236049/concrete.jpg);
+}
+
+::-moz-selection {
+    background: red;
+}
+
+::selection {
+    background: red;
+}
+
+img {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.Palette {
+    /* position: fixed; */
+    /* position: relative; */
+    /* position: fixed; */
+    bottom: 1rem;
+    right: 1rem;
+    border-radius: 4px;
+    /* box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.3); */
+    padding: 0.5rem;
+    background-color: #fff;
+}
+
+.Palette_colors {
+    display: -webkit-box;
+    display: flex;
+    /* margin-bottom: 1rem; */
+}
+
+.Palette_color {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 4px;
+    border: black;
+    border: solid;
+    border-width: 0.5px;
+    margin-right: 0.5rem;
+    cursor: inherit;
+    -webkit-transition: width 0.4s;
+    transition: width 0.4s;
+    padding: 0px;
+}
+
+.Palette_color:hover {
+    width: 2rem;
+}
+
+.Palette_color:last-child {
+    margin-right: 0;
+}
+
+.Palette_color.red {
+    background-color: #ff0000;
+}
+
+.Palette_color.green {
+    background-color: #00ff00;
+}
+
+.Palette_color.blue {
+    background-color: #0000ff;
+}
+
+.Palette_color.black {
+    background-color: #000;
+}
+
+.Palette_color.teal {
+    background-color: #008080;
+}
+
+.Palette_color.CobaltBlue {
+    background-color: #0047ab;
+}
+
+.Palette_color.LightGrayGreen {
+    background-color: #98fb98;
+}
+
+.Palette_color.OrangeRed {
+    background-color: #ff4500;
+}
+
+.Palette_color.Orange {
+    background-color: #ffa500;
+}
+
+.Palette_color.Golden {
+    background-color: #ffd700;
+}
+
+.Palette_color.OliveDrab {
+    background-color: #6b8e23;
+}
+
+button {
+    border: none;
+    outline: none;
+    background-color: none;
+}
+
+.Clear {
+    cursor: inherit;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.3);
+    padding: 0.5rem;
+    background-color: #fff;
+}
+
+.Clear svg {
+    display: inline-block;
+}

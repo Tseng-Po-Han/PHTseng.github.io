@@ -1,0 +1,263 @@
+#Issei {
+    /* width: 500px; */
+    /* height: 500px; */
+    width: 100vh;
+    height: 100vh;
+    background-image: url(./bboy\ issei\ \(10\ seconds\).gif);
+    background-size: cover;
+    /* border-radius: 50%; */
+    background-position-x: -300px;
+    margin: calc((100vh - 500px) / 2) auto;
+    -webkit-filter: opacity(1);
+    -webkit-filter: grayscale(1);
+
+}
+
+.grayscale {
+    -webkit-filter: grayscale(1);
+}
+
+.Front {
+    /* width: 90%; */
+    /* height: 30vw; */
+    /* right: 100px; */
+    /* overflow: hidden; */
+    /* margin-bottom: 40px; */
+    position: relative;
+    /* transform: translateX(-30%) translateY(-25%); */
+    padding-left: 0px;
+    padding-right: 0px;
+    -webkit-filter: grayscale(1);
+}
+
+#nav-body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #336699;
+    display: inline-block;
+    height: auto;
+    width: 100%;
+    vertical-align: top;
+    overflow: hidden;
+}
+
+#menu {
+    margin: 0;
+    padding: 0;
+    width: 12em;
+    background-color: #336699;
+    list-style-image: none;
+    list-style-type: none;
+    overflow: auto;
+    position: relative;
+    display: inline-block;
+    clear: both;
+    float: left;
+}
+
+#menu li {
+    font: 100% "Lucida Sans Unicode", "Bitstream Vera Sans", "Trebuchet Unicode MS", "Lucida Grande", Verdana, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#menu a {
+    background: #336699;
+    border-bottom: 1px solid #336699;
+    color: #ccc;
+    display: block;
+    margin: 0;
+    padding: 8px 12px;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+#menu a:hover {
+    background: #2580a2 url("images/hover.gif") left center no-repeat;
+    color: #fff;
+    padding-bottom: 8px;
+}
+
+#content {
+    font-size: xx-large;
+    color: #336699;
+    background-color: #FFF;
+    display: inline-block;
+    width: 50%;
+    margin-right: 25%;
+    margin-left: 25%;
+    text-align: center;
+    height: auto;
+    vertical-align: 5%;
+    overflow: auto;
+    clear: both;
+    float: left;
+}
+
+.round-button {
+    display: block;
+    width: 120px;
+    height: 120px;
+    line-height: 120px;
+    border: 2px solid black;
+    border-radius: 50%;
+    color: #f5f5f5;
+    text-align: center;
+    text-decoration: none;
+    background: transparent;
+    box-shadow: 0 0 3px gray;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* .round-button:hover {
+    background: #777555;
+} */
+
+/*
+  https://developer.mozilla.org/en/docs/Web/CSS/box-shadow
+  box-shadow: [inset?] [top] [left] [blur] [size] [color];
+
+  Tips:
+    - We're setting all the blurs to 0 since we want a solid fill.
+    - Add the inset keyword so the box-shadow is on the inside of the element
+    - Animating the inset shadow on hover looks like the element is filling in from whatever side you specify ([top] and [left] accept negative values to become [bottom] and [right])
+    - Multiple shadows can be stacked
+    - If you're animating multiple shadows, be sure to keep the same number of shadows so the animation is smooth. Otherwise, you'll get something choppy.
+*/
+.fill:hover,
+.fill:focus {
+    box-shadow: inset 0 0 0 2em var(--hover);
+}
+
+.pulse:hover,
+.pulse:focus {
+    -webkit-animation: pulse 1s;
+    animation: pulse 1s;
+    /* 調整em可以調整光暈大小 */
+    box-shadow: 0 0 0 0.4em rgba(255, 255, 255, 0);
+}
+
+@-webkit-keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 var(--hover);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 var(--hover);
+    }
+}
+
+.close:hover,
+.close:focus {
+    box-shadow: inset -3.5em 0 0 0 var(--hover), inset 3.5em 0 0 0 var(--hover);
+}
+
+.raise:hover,
+.raise:focus {
+    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+    -webkit-transform: translateY(-0.25em);
+    transform: translateY(-0.25em);
+}
+
+.up:hover,
+.up:focus {
+    box-shadow: inset 0 -3.25em 0 0 var(--hover);
+}
+
+.slide:hover,
+.slide:focus {
+    box-shadow: inset 6.5em 0 0 0 var(--hover);
+}
+
+.offset {
+    box-shadow: 0.3em 0.3em 0 0 var(--color), inset 0.3em 0.3em 0 0 var(--color);
+}
+
+.offset:hover,
+.offset:focus {
+    box-shadow: 0 0 0 0 var(--hover), inset 6em 3.5em 0 0 var(--hover);
+}
+
+.fill {
+    --color: #a972cb;
+    --hover: #cb72aa;
+}
+
+.pulse {
+    --color: #ef6eae;
+    --hover: #ef8f6e;
+}
+
+.close {
+    --color: #ff7f82;
+    --hover: #ffdc7f;
+}
+
+.raise {
+    --color: #ffa260;
+    --hover: #e5ff60;
+}
+
+.up {
+    --color: #e4cb58;
+    --hover: #94e458;
+}
+
+.slide {
+    --color: #8fc866;
+    --hover: #66c887;
+}
+
+.offset {
+    --color: #19bc8b;
+    --hover: #1973bc;
+}
+
+.MyButton {
+    color: var(--color);
+    -webkit-transition: 0.25s;
+    transition: 0.25s;
+}
+
+button:hover,
+button:focus {
+    border-color: var(--hover);
+    color: #fff;
+}
+
+body {
+    color: #fff;
+    background: #17181c;
+    font: 300 1em 'Fira Sans', sans-serif;
+    -webkit-box-pack: center;
+    justify-content: center;
+    align-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    display: -webkit-box;
+    display: flex;
+}
+
+button {
+    background: none;
+    border: 2px solid;
+    font: inherit;
+    line-height: 1;
+    margin: 0.5em;
+    padding: 1em 2em;
+}
+
+h1 {
+    font-weight: 400;
+}
+
+code {
+    color: #e4cb58;
+    font: inherit;
+}

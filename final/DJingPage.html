@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<!-- saved from url=(0060)https://www.w3schools.com/howto/tryhow_css_parallax_demo.htm -->
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History of Hip Hop</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <style>
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+            font: 400 15px/1.8 "Lato", sans-serif;
+            color: #777;
+        }
+
+        .bgimg-1,
+        .bgimg-2,
+        .bgimg-3 {
+            position: relative;
+            opacity: 0.65;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+
+        .bgimg-1 {
+            background-image: url("./CollegeHighvol.14_flare.jpg");
+            min-height: 100%;
+        }
+
+        .bgimg-2 {
+            background-image: url("./DMF_Final.jpg");
+            min-height: 400px;
+        }
+
+        .bgimg-3 {
+            background-image: url("./FrontTheTDC.jpg");
+            min-height: 400px;
+        }
+
+        .caption {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            width: 100%;
+            text-align: center;
+            color: #000;
+        }
+
+        .caption span.border {
+            background-color: #111;
+            color: #fff;
+            padding: 18px;
+            font-size: 25px;
+            letter-spacing: 10px;
+        }
+
+        h3 {
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            font: 20px "Lato", sans-serif;
+            color: #111;
+        }
+
+        /* Turn off parallax scrolling for tablets and phones */
+        @media only screen and (max-device-width: 1024px) {
+
+            .bgimg-1,
+            .bgimg-2,
+            .bgimg-3 {
+                background-attachment: scroll;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header id="Menu">
+        <!-- navbar -->
+        <nav class="navbar navbar-dark fixed-top navbar-expand-lg scrolling-navbar" style="background-color: black;">
+            <!--navbar-dark-->
+            <div class="container-fluid">
+
+                <!-- Brand -->
+                <a class="navbar-brand" href="./index.html">
+                    <strong>History of Hip Hop</strong>
+                </a>
+
+                <!-- Collapse -->
+                <button class=" navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Links -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                    <!-- Left -->
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link waves-effect waves-light" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link waves-effect waves-light" href="./BreakingPage.html">Breaking</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link waves-effect waves-light" href="./MusicPage.html">Music</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link waves-effect waves-light active" href="./DJingPage.html">MC<span
+                                    class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link waves-effect waves-light" href="./GraffitiPage.html">Graffiti</a>
+                        </li>
+                    </ul>
+
+                    <!-- Right -->
+                    <ul class="navbar-nav nav-flex-icons">
+                        <li class="nav-item">
+                            <a href="https://www.facebook.com/profile.php?id=100000631027784"
+                                class="nav-link waves-effect waves-light" target="_blank">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="https://www.instagram.com/tfc_bohan/?hl=zh-tw"
+                                class="nav-link waves-effect waves-light" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="https://github.com/Tseng-Po-Han/PHTseng.github.io"
+                                class="nav-link border border-light rounded waves-effect waves-light" target="_blank">
+                                <i class="fab fa-github mr-2"></i>J. Tseng GitHub
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+        </nav>
+        <!-- navbar -->
+    </header>
+
+    <div class="bgimg-1">
+        <div class="caption">
+            <span class="border">饒舌文化</span>
+        </div>
+    </div>
+
+    <div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+        <h3 style="text-align:center;">饒舌文化</h3>
+        <p>儘管如此，我們仍然需要對饒舌文化保持懷疑的態度。 做好饒舌文化這件事，可以說已經成為了全民運動。
+            蒙田說過一句富有哲理的話，英勇是一種力量，但不是腿部和臂部的力量，而是心靈和靈魂的力量，這力量並不存在於戰馬和武器價值之中，而是存在於我們自身之中。 帶著這句話，我們還要更加慎重的審視這個問題。
+            深入的探討饒舌文化，是釐清一切的關鍵。 我想，把饒舌文化的意義想清楚，對各位來說並不是一件壞事。 這是不可避免的。
+            培根說過一句經典的名言，美德有如名香，經燃燒或壓抑而其香愈烈：蓋幸運最難顯露惡德而厄運最能顯露美德也。 這似乎解答了我的疑惑。 這樣看來，我們要從本質思考，從根本解決問題。
+            伏爾泰曾經說過，友誼是靈魂的結合，這個結合是可以離異的，這是兩個敏感，正直的人之間心照不宣的契約。 這段話對世界的改變有著深遠的影響。 陶潛曾說過一句意義深遠的話，勤學如春起之苗，不見其增，日有所長。
+            這句話改變了我的人生。 話雖如此，我們卻也不能夠這麼篤定。
+
+            我們普遍認為，若能理解透徹核心原理，對其就有了一定的了解程度。 從這個角度來看，若發現問題比我們想像的還要深奧，那肯定不簡單。 在人類的歷史中，我們總是盡了一切努力想搞懂饒舌文化。 問題的核心究竟是什麼?
+            饒舌文化因何而發生? 我們不得不面對一個非常尷尬的事實，那就是，我們要學會站在別人的角度思考。 在這種困難的抉擇下，本人思來想去，寢食難安。 當前最急迫的事，想必就是釐清疑惑了。
+            由於，若能夠洞悉饒舌文化各種層面的含義，勢必能讓思維再提高一個層級。
+
+            我們可以很篤定的說，這需要花很多時間來嚴謹地論證。 面對如此難題，我們必須設想周全。 對於饒舌文化，我們不能不去想，卻也不能走火入魔。 饒舌文化的存在，令我無法停止對他的思考。 饒舌文化絕對是史無前例的。
+            若沒有饒舌文化的存在，那麼後果可想而知。 若能夠欣賞到饒舌文化的美，相信我們一定會對饒舌文化改觀。 饒舌文化，到底應該如何實現。 饒舌文化究竟是怎麼樣的存在，始終是個謎題。
+            布魯諾曾經提過，我認為勝利是可以得到的，並且勇敢地為它奮鬥。 我的後代將會說：“他不知死的恐懼，比任何人都剛毅; 認為為真理而鬥爭是人類最大的樂趣。 ” 這把視野帶到了全新的高度。
+        </p>
+    </div>
+
+    <div class="bgimg-2">
+        <div class="caption">
+            <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">饒舌風格</span>
+        </div>
+    </div>
+
+    <div style="position:relative;">
+        <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+            <p>每個人的一生中，幾乎可說碰到饒舌風格這件事，是必然會發生的。 我們要學會站在別人的角度思考。
+
+                一般來說，話雖如此，我們卻也不能夠這麼篤定。 總而言之，小普林尼說過一句經典的名言，天才絕不應鄙視勤奮。 這句話語雖然很短，但令我浮想聯翩。 我們都有個共識，若問題很困難，那就勢必不好解決。
+                培根曾說過一句意義深遠的話，天然的才能好像天然的植物，需要學問來修剪。 這句話把我們帶到了一個新的維度去思考這個問題。 徐甜齋說過一句很有意思的話，多才惹得多愁，多情便有多憂。
+                這句話把我們帶到了一個新的維度去思考這個問題。 饒舌風格絕對是史無前例的。 駱賓王講過一段深奧的話，一貴一賤交情見。 帶著這句話，我們還要更加慎重的審視這個問題。 一般來講，我們都必須務必慎重的考慮考慮。
+
+                若到今天結束時我們都還無法釐清饒舌風格的意義，那想必我們昨天也無法釐清。 烏申斯基曾經提到過，如果你能成功地選擇勞動，並把自己的全部精神灌注到它裡面去，那麼幸福就會找到你。
+                帶著這句話，我們還要更加慎重的審視這個問題。 饒舌風格，發生了會如何，不發生又會如何。 如果別人做得到，那我也可以做到。 對於饒舌風格，我們不能不去想，卻也不能走火入魔。
+                生活中，若饒舌風格出現了，我們就不得不考慮它出現了的事實。 不要先入為主覺得饒舌風格很複雜，實際上，饒舌風格可能比你想的還要更複雜。 世界需要改革，需要對饒舌風格有新的認知。 問題的核心究竟是什麼?
+                約翰森講過，一個家庭中沒有書籍，等於一間房子沒有窗子。 這句話決定了一切。 在人類的歷史中，我們總是盡了一切努力想搞懂饒舌風格。 儘管如此，我們仍然需要對饒舌風格保持懷疑的態度。
+                荷馬曾講過，惟仁德才能永遠屹立不搖。 這激勵了我。 透過逆向歸納，得以用最佳的策略去分析饒舌風格。 深入的探討饒舌風格，是釐清一切的關鍵。 就我個人來說，饒舌風格對我的意義，不能不說非常重大。
+                饒舌風格的存在，令我無法停止對他的思考。 饒舌風格因何而發生? 要想清楚，饒舌風格，到底是一種怎麼樣的存在。 饒舌風格似乎是一種巧合，但如果我們從一個更大的角度看待問題，這似乎是一種不可避免的事實。
+                饒舌風格的出現，必將帶領人類走向更高的巔峰。 我們要從本質思考，從根本解決問題。</p>
+        </div>
+    </div>
+
+    <div class="bgimg-3">
+        <div class="caption">
+            <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">臺灣饒舌文化</span>
+        </div>
+    </div>
+
+    <div style="position:relative;">
+        <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+            <p>克雷洛夫曾經認為，一切真正的天才，都能夠蔑視誹謗; 他們天生的特長，使批評家不能信口開河。 但願各位能從這段話中獲得心靈上的滋長。 臺灣饒舌文化必定會成為未來世界的新標準。
+                每個人的一生中，幾乎可說碰到臺灣饒舌文化這件事，是必然會發生的。 話雖如此，我們卻也不能夠這麼篤定。 當你搞懂後就會明白了。 李大釗告訴我們，人生最高理想，在求達於真理。 這讓我的思緒清晰了。
+                如果仔細思考臺灣饒舌文化，會發現其中蘊含的深遠意義。 我們要學會站在別人的角度思考。 在這種困難的抉擇下，本人思來想去，寢食難安。
+
+                歐陽修深信，古人相馬不相皮，瘦嗎雖瘦骨法奇; 世無伯樂良可嗤，千金市馬惟市肥。 這段話的餘韻不斷在我腦海中迴盪著。 既然，俗話說的好，掌握思考過程，也就掌握了臺灣饒舌文化。 臺灣饒舌文化絕對是史無前例的。
+                赫胥黎講過一句值得人反覆尋思的話，大凡實際接觸過科學研究的人都知道，不肯超越事實的人很少會有成就。 這讓我對於看待這個問題的方法有了巨大的改變。 毛澤東在過去曾經講過，人是要有幫助的。
+                荷花雖好，也要綠葉扶持。 一個籬笆打三個樁，一個好漢要有三個幫。 這段話讓我的心境提高了一個層次。
+
+                謹慎地來說，我們必須考慮到所有可能。 雨果講過一段耐人尋思的話，最大的決心會產生最高的智慧。 希望大家實際感受一下這段話。 昆圖斯曾經提過，膽小的狗叫起來兇，但不會傷人。
+                這句話看似簡單，但其中的陰鬱不禁讓人深思。 我們普遍認為，若能理解透徹核心原理，對其就有了一定的了解程度。 若無法徹底理解臺灣饒舌文化，恐怕會是人類的一大遺憾。 臺灣饒舌文化究竟是怎麼樣的存在，始終是個謎題。
+                本人也是經過了深思熟慮，在每個日日夜夜思考這個問題。 我們都知道，只要有意義，那麼就必須慎重考慮。 那麼，若沒有臺灣饒舌文化的存在，那麼後果可想而知。
+                總而言之，看看別人，再想想自己，會發現問題的核心其實就在你身旁。 鄧析子說過，不治其本，而務其未，譬猶拯溺，錘之以石; 救火，投之以薪。 這句話看似簡單，卻埋藏了深遠的意義。
+
+                總結來說，瓦萊里說過，人類最大的不幸是他沒有像眼瞼制動器那樣器官，使他能在需要時遮住或阻遏一種思想或所有的思想。 這句話幾乎解讀出了問題的根本。</p>
+        </div>
+    </div>
+
+    <div class="bgimg-1">
+        <div class="caption">
+            <span class="border">唱出社會寫實面</span>
+        </div>
+    </div>
+
+    <br>
+
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-4">
+
+            </div>
+            <div class="col-4">
+                <form>
+                    <h4>錯誤內容更正或新知分享~！</h4>
+                    <p>如果網站中有任何與您認知有誤的內容，或您有任何願意補充分享的嘻哈文化小知識、歷史小故事，都非常歡迎並感謝您賜教與大方分享喔~！</p>
+
+
+                    <label for="Q1">錯誤的內容？</label><br>
+                    <!-- id="entry_94276115" -->
+                    <input type="text" class="entry_94276115" name="entry.94276115" id="Q1">
+                    <br>
+
+                    <!-- id="entry_640303386" -->
+                    <label for="Q2">歷史小故事？</label><br>
+                    <input type="text" class="entry_640303386" name="entry.640303386" id="Q2">
+
+
+                    <!-- <input type="submit" class="submit" value="Submit" id=""> -->
+                    <input type="submit" class="submit" value="Submit" id="">
+
+
+
+                </form>
+
+            </div>
+            <div class="col-4">
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="container-fluid text-center font-small wow fadeIn"
+        style="visibility: visible; animation-name: fadeIn; margin-top: 0rem;" id="Contact">
+        <!--Copyright-->
+        <div class=" footer-copyright py-3" style="color: black;background-color: white;">
+            © 2020 Copyright:<a target="_blank"> P.-H. Tseng</a>
+        </div>
+        <!--/.Copyright-->
+
+    </div>
+
+
+
+    <!-- 為了ajax以及getScript使用完整版的JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+
+
+</body>
+
+</html>
